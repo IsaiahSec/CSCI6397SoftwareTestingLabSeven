@@ -31,7 +31,7 @@ The app is ready when the log says `Started StudentRegDemo`. The first run takes
 | OpenAPI contract (YAML) | `http://localhost:8080/v3/api-docs.yaml` |
 | H2 database console | `http://localhost:8080/h2-console` (JDBC URL `jdbc:h2:mem:studentdb`, user `sa`, password `password`) |
 
-The web UI's source is in `frontend`. If you want to change it and see it reload live, run `npm run dev` in that folder while the app is running, and open `http://localhost:5173`.
+The web UI's source is in `frontend`. If you want to change it and see it reload live, run `npm run dev` in that folder while the app is running, and open `http://localhost:5173`.  (This will require installing Node, or a more complicated run through Maven:  'mvn frontend:npm -Dfrontend.npm.arguments="run dev"')
 
 ## Run the UI tests
 
@@ -41,7 +41,7 @@ Stop the app if it's running, then run:
 mvn verify
 ```
 
-Maven builds everything, starts the app, runs every test class whose name ends in `IT`, and stops the app. Screenshots of failed tests are saved in `target/ui-screenshots`.
+Maven builds everything, starts the app, runs every test class whose name ends in `IT` (Stands for Integration Test, a maven convention for Failsafe tests), and stops the app. Screenshots of failed tests are saved in `target/ui-screenshots`.  The following options may be added to the mvn verify command:
 
 | Option | Effect |
 | --- | --- |
