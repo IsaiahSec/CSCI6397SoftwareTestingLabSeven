@@ -124,6 +124,7 @@ const StudentList = () => {
             <button id = "add-student-button" onClick={handleAdd}>Add Student</button>
         </div>
     <h1>Students</h1>
+    <div className="table-scroll">
     <table id = "student-list-table">
         <thead>
         <tr>
@@ -194,6 +195,7 @@ const StudentList = () => {
         ))}
         </tbody>
     </table>
+    </div>
     </div>
 };
 
