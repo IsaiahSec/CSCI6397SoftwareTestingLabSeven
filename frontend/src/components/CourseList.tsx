@@ -193,6 +193,7 @@ const CourseList: React.FC = () => {
                 <button onClick={handleAdd}>Add Course</button>
             </div>
             <h1>Available Courses</h1>
+            <div className="table-scroll">
             <table id = "course-list-table">
                 <thead>
                 <tr>
@@ -327,6 +328,7 @@ const CourseList: React.FC = () => {
                 ))}
                 </tbody>
             </table>
+            </div>
         </div>
     );
 };
